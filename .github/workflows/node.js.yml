@@ -19,6 +19,9 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-18.04
+    uses: actions/setup-node@v1
+    with:
+    node-version: '10.x'
 
   build:
 
