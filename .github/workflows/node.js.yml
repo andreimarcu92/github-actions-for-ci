@@ -10,11 +10,8 @@ on:
   pull_request:
     branches:
     - main
-on:
   schedule:
   - cron: "0 2 * * 1-5"
-    
-on:
   workflow_dispatch:
 
 jobs:
