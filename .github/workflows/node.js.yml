@@ -14,16 +14,12 @@ on:
   - cron: "0 2 * * 1-5"
   workflow_dispatch:
   
-
-jobs:
   
+jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-18.04
-- name: Setup Node
-  uses: actions/setup-node@v1
-  with:
-    node-version: '10.x'
+
   build:
 
     runs-on: ubuntu-latest
